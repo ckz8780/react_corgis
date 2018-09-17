@@ -2,7 +2,7 @@
 
 ## A responsive, fluid photogrid using Flexbox, ReactJS and Bulma.
 
-### Live Site: https://ckz8780.github.io/react_corgis/
+### Live Site: https://ckz8780.github.io/react_corgis/ [![Build Status](https://travis-ci.org/ckz8780/react_corgis.svg?branch=master)](https://travis-ci.org/ckz8780/react_corgis)
 
 ### Methodology:
 
