@@ -40,6 +40,7 @@ The form at the top of the page allows you to change the number of photos, min/m
 ### Potential Improvements:
 
 - Loading indicators/conditional render logic
+- Dynamic grid size (right now it's restricted to 1440px - this could be passed as a prop or managed w/ `Gallery` state)
 - Adjustment of aspect ratios so images don't need to be grouped by height
 - Flexible row height w/ a size observer (see something like [react-photo-gallery](https://github.com/neptunian/react-photo-gallery/) for example)
 - Masonry/CSS grid dense/Bulma tile type layouts

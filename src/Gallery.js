@@ -18,10 +18,20 @@ class Gallery extends Component {
   }
 
   getRandomSize = (min, max) => {
+    /* 
+      Generates a random multiple of 100 for image sizing 
+    */
+
     return 100*(Math.floor(Math.random() * (max - min + 1) ) + min);
   }
 
   generatePhotos = (count, domain, minMaxWidth, minMaxHeight) => {
+    /* 
+      Given a number of photos, a domain, and min/max heights/widths,
+      returns an array of photo URLs to be rendered together w/ their
+      aspect ratios for flexible sizing.
+    */
+
     let photos = {};
     for(let i = 0; i<count; i++) {
       let photo = {};
@@ -43,6 +53,10 @@ class Gallery extends Component {
   }
 
   handleChange = e => {
+    /* 
+      Handle changing number of photos, min/max width/height, etc.
+    */
+
     switch(e.target.id) {
       case "corgi-count":
         return this.setState({
