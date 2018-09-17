@@ -2,6 +2,8 @@
 
 ### A responsive, fluid photogrid using Flexbox, ReactJS and Bulma.
 
+### Live Site https://ckz8780.github.io/react_corgis/
+
 ### Methodology:
 
 The `Gallery` component is the parent. In its render function it calls the `generatePhotos` function which returns an array of randomly sized photo objects, grouped by height. It then renders a small form and maps each height group into a `PhotoContainer` component. The `PhotoContainer` maps each photo object in the input array into a `Photo` component. The `Photo` component renders a div w/ flexbox styles to maintain the aspect ratio and places the photo in it using the photo object properties (src, alt, etc). All `PhotoContainer`s are `display: flex; flex-direction: row; flex-wrap: wrap;` so they will wrap cleanly. All `Photo`s use a combination of flex-grow, flex-shrink and flex-basis to maintain their aspect ratio a la `flex: [aspectRatio] 1 auto;`.
@@ -15,19 +17,19 @@ The form allows you to change the number of photos, min/max width and min/max he
 - `Gallery`: The parent gallery component
   - Props: None
   - Initial State: 
-    - photoCount: Number of photos to render - 10
-    - domainStub: The stub for the domain that generates random images - "http://www.placecorgi.com"
-    - minWidth: Minimum width for the generated photos (x 100) - 2
-    - maxWidth: Maximum width for the generated photos (x 100) - 4
-    - minHeight: Minimum height for the generated photos (x 100) - 1
-    - maxHeight: Maximum height for the generated photos (x 100) - 4
+    - photoCount: Number of photos to render => 10
+    - domainStub: The stub for the domain that generates random images => "http://www.placecorgi.com"
+    - minWidth: Minimum width for the generated photos (x 100) => 2
+    - maxWidth: Maximum width for the generated photos (x 100) => 4
+    - minHeight: Minimum height for the generated photos (x 100) => 1
+    - maxHeight: Maximum height for the generated photos (x 100) => 4
 
 - `PhotoContainer`: A flex photo container for grouping images of similar heights
   - Props: 
     - An array of photos of similar heights
 
 - `Photo`: A photo component to fill up a `PhotoContainer`
-  - Props: a photo object containiner the image's:
+  - Props: a photo object containing the image's:
     - width: Width
     - height: Height
     - aspectRatio: Aspect Ratio
