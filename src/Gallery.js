@@ -106,19 +106,19 @@ class Gallery extends Component {
           <div className="field is-grouped">
             <div className="control is-expanded has-text-centered">
               <label className="label is-medium">Minimum Corgi Fatness</label>
-              <input id="corgi-minwidth" className="input is-madium" type="number" min={1} max={maxWidth} defaultValue={minWidth} onChange={this.handleChange}/>
+              <input id="corgi-minwidth" className="input is-medium" type="number" min={1} max={maxWidth} defaultValue={minWidth} onChange={this.handleChange}/>
             </div>
             <div className="control is-expanded has-text-centered">
               <label className="label is-medium">Maximum Corgi Fatness</label>
-              <input id="corgi-maxwidth" className="input is-madium" type="number" min={minWidth} max={10} defaultValue={maxWidth} onChange={this.handleChange}/>
+              <input id="corgi-maxwidth" className="input is-medium" type="number" min={minWidth} max={10} defaultValue={maxWidth} onChange={this.handleChange}/>
             </div>
             <div className="control is-expanded has-text-centered">
               <label className="label is-medium">Minimum Corgi Height</label>
-              <input id="corgi-minheight" className="input is-madium" type="number" min={1} max={maxHeight} defaultValue={minHeight} onChange={this.handleChange}/>
+              <input id="corgi-minheight" className="input is-medium" type="number" min={1} max={maxHeight} defaultValue={minHeight} onChange={this.handleChange}/>
             </div>
             <div className="control is-expanded has-text-centered">
               <label className="label is-medium">Maximum Corgi Height</label>
-              <input id="corgi-maxheight" className="input is-madium" type="number" min={minHeight} max={10} defaultValue={maxHeight} onChange={this.handleChange}/>
+              <input id="corgi-maxheight" className="input is-medium" type="number" min={minHeight} max={10} defaultValue={maxHeight} onChange={this.handleChange}/>
             </div>
           </div>
         </div>
