@@ -9,7 +9,7 @@ class Gallery extends Component {
     super(props);
     this.state = {
       photoCount: 10,
-      domainStub: "http://www.placekitten.com",
+      domainStub: "http://www.placecorgi.com",
       minWidth: 2,
       maxWidth: 4,
       minHeight: 1,
